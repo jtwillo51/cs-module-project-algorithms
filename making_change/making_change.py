@@ -4,8 +4,17 @@ import sys
 
 def making_change(amount, denominations):
   # Your code here
-
-  pass
+  if amount == 0:
+    return 1
+  elif amount <= 0 :
+    return 0 
+  elif amount == 1:
+    return 1
+  for i in range(amount):
+    return making_change(i, denominations) + making_change(i-1, denominations)
+  
+  
+  
 
 
 if __name__ == "__main__":
