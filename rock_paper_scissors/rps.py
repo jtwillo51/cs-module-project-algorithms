@@ -5,7 +5,8 @@ import sys
 def rock_paper_scissors(n):
   # Your code here
 
-  pass
+  for i in range(n):
+    print(['rock', 'rock'], ['rock', 'paper'],['rock', 'scissors'], ['paper', 'scissors'],['paper', 'paper'], ['scisors', 'scisors'])
 
 
 if __name__ == "__main__":
